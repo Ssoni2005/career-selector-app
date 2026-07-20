@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#5b21b6" />
+    <title>Arun Computer Career Compass</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo">AC</div>
+        <div>
+          <b>Arun Computer Career Compass</b
+          ><span>पढ़ेगा रीवा! बढ़ेगा रीवा! · पात्रता‑आधारित career guidance</span>
+        </div>
+      </div>
+      <div class="top-actions"><a class="site-link" href="https://aruncomputer.com/" target="_blank" rel="noopener">Visit Arun Computer</a><a class="call" href="tel:+919201488597">☎ 92014-88597</a></div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">ARUN COMPUTER & IT · REWA</span>
+          <h1>
+            अपनी stream और रुचि के आधार पर <em>सही career routes</em> देखें
+          </h1>
+          <p>
+            Arun Computer & IT का यह decision-support app पहले course eligibility जाँचता है, फिर आपकी रुचि, काम करने की पसंद और study preference के अनुसार केवल उपयुक्त विकल्प दिखाता है।
+          </p>
+          <div class="badges">
+            <span>✓ Eligibility-first logic</span><span>✓ Top 3 realistic routes</span><span>✓ Arun Computer course guidance</span>
+          </div>
+          <button class="primary" data-scroll="#selector">
+            चयन शुरू करें →
+          </button>
+        </div>
+        <div class="hero-visual simple-hero">
+          <div class="career-wheel">
+            <span>⚙️</span><span>🩺</span><span>💼</span><span>🎨</span
+            ><span>⚖️</span><span>🛡️</span><b>🎓</b>
+          </div>
+          <div class="float f1">
+            <b id="heroMatch">Engineering & Technology</b
+            ><span>Current best route</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="arun-profile">
+        <div class="profile-intro">
+          <span class="eyebrow">ABOUT ARUN COMPUTER</span>
+          <h2>रोजगारोन्मुखी कम्प्यूटर प्रशिक्षण और career guidance</h2>
+          <p>Arun Computer & IT, Rewa offers recognised computer education, practical training and technology-focused career support. The institute highlights PGDCA/DCA, Web Designing and short-term courses such as Basic, CPCT, Tally, C, C++, Python, SQL and PHP.</p>
+        </div>
+        <div class="profile-stats">
+          <article><b>20+</b><span>Years of Excellence</span></article>
+          <article><b>1000+</b><span>Alumni Network</span></article>
+          <article><b>90%</b><span>Placement Rate*</span></article>
+          <article><b>20+</b><span>Industry Partners</span></article>
+        </div>
+      </section>
+
+      <section id="selector" class="selector">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">5 SIMPLE STEPS</span>
+            <h2>हर चरण पिछले उत्तर पर आधारित है</h2>
+            <p>
+              एक मुख्य विकल्प चुनें; app केवल पात्र और व्यावहारिक pathways
+              दिखाएगा।
+            </p>
+          </div>
+          <div class="progress-wrap">
+            <div><span>Progress</span><b id="progressText">20%</b></div>
+            <div class="progress"><span id="progressBar"></span></div>
+          </div>
+        </div>
+
+        <div class="layout">
+          <div class="steps">
+            <article class="step active">
+              <div class="step-title">
+                <span>1</span>
+                <div>
+                  <h3>Your Class 12 stream</h3>
+                  <p>यह सबसे महत्वपूर्ण eligibility filter है।</p>
+                </div>
+              </div>
+              <div class="cards four">
+                <button
+                  class="select-card selected"
+                  data-group="stream"
+                  data-value="pcm"
+                >
+                  <div class="icon pcm">🧮</div>
+                  <b>Science PCM</b><small>Physics, Chemistry, Maths</small>
+                </button>
+                <button
+                  class="select-card"
+                  data-group="stream"
+                  data-value="pcb"
+                >
+                  <div class="icon pcb">🧬</div>
+                  <b>Science PCB</b><small>Physics, Chemistry, Biology</small>
+                </button>
+                <button
+                  class="select-card"
+                  data-group="stream"
+                  data-value="commerce"
+                >
+                  <div class="icon commerce">📊</div>
+                  <b>Commerce</b><small>Accounts, Business, Economics</small>
+                </button>
+                <button
+                  class="select-card"
+                  data-group="stream"
+                  data-value="arts"
+                >
+                  <div class="icon arts">📚</div>
+                  <b>Arts / Humanities</b
+                  ><small>Languages, society, creative subjects</small>
+                </button>
+              </div>
+            </article>
+
+            <article class="step">
+              <div class="step-title">
+                <span>2</span>
+                <div>
+                  <h3>What interests you most?</h3>
+                  <p>
+                    एक मुख्य career family चुनें। Relevant options are
+                    highlighted.
+                  </p>
+                </div>
+              </div>
+              <div class="multi-grid" id="interestGrid">
+                <button
+                  class="multi selected"
+                  data-group="interest"
+                  data-value="technology"
+                >
+                  ⚙️<span
+                    ><b>Technology</b
+                    ><small>Engineering, coding, systems</small></span
+                  >
+                </button>
+                <button class="multi" data-group="interest" data-value="health">
+                  🩺<span
+                    ><b>Healthcare</b
+                    ><small>Medicine, nursing, pharmacy</small></span
+                  >
+                </button>
+                <button
+                  class="multi"
+                  data-group="interest"
+                  data-value="business"
+                >
+                  💼<span
+                    ><b>Business & Finance</b
+                    ><small
+                      >Management, commerce, professional courses</small
+                    ></span
+                  >
+                </button>
+                <button
+                  class="multi"
+                  data-group="interest"
+                  data-value="creative"
+                >
+                  🎨<span
+                    ><b>Creative & Media</b
+                    ><small>Design, animation, journalism</small></span
+                  >
+                </button>
+                <button class="multi" data-group="interest" data-value="law">
+                  ⚖️<span
+                    ><b>Law & Society</b
+                    ><small>Law, policy, humanities</small></span
+                  >
+                </button>
+                <button
+                  class="multi"
+                  data-group="interest"
+                  data-value="service"
+                >
+                  🛡️<span
+                    ><b>Public Service</b
+                    ><small
+                      >Defence, teaching, government-oriented routes</small
+                    ></span
+                  >
+                </button>
+                <button
+                  class="multi"
+                  data-group="interest"
+                  data-value="science"
+                >
+                  🔬<span
+                    ><b>Science & Nature</b
+                    ><small>Research, agriculture, environment</small></span
+                  >
+                </button>
+                <button
+                  class="multi"
+                  data-group="interest"
+                  data-value="hospitality"
+                >
+                  🏨<span
+                    ><b>Hospitality & Travel</b
+                    ><small>Hotels, culinary, tourism</small></span
+                  >
+                </button>
+              </div>
+            </article>
+
+            <article class="step">
+              <div class="step-title">
+                <span>3</span>
+                <div>
+                  <h3>What kind of work do you enjoy?</h3>
+                  <p>यह similar courses के बीच अंतर करने में मदद करता है।</p>
+                </div>
+              </div>
+              <div class="work-grid">
+                <button
+                  class="work selected"
+                  data-group="work"
+                  data-value="analytical"
+                >
+                  🧠<b>Logic & problem solving</b>
+                </button>
+                <button class="work" data-group="work" data-value="people">
+                  🤝<b>Helping people</b>
+                </button>
+                <button class="work" data-group="work" data-value="creative">
+                  ✨<b>Creating & communicating</b>
+                </button>
+                <button class="work" data-group="work" data-value="practical">
+                  🛠️<b>Hands-on / field work</b>
+                </button>
+                <button class="work" data-group="work" data-value="leadership">
+                  🚀<b>Business & leadership</b>
+                </button>
+              </div>
+            </article>
+
+            <article class="step">
+              <div class="step-title">
+                <span>4</span>
+                <div>
+                  <h3>Study preference</h3>
+                  <p>Duration and entrance intensity चुनें।</p>
+                </div>
+              </div>
+              <div class="sub-grid">
+                <label class="field"
+                  ><span>Preferred study duration</span
+                  ><select id="duration">
+                    <option value="short">1–2 years / diploma</option>
+                    <option value="degree" selected>3–4 years / degree</option>
+                    <option value="long">5+ years / professional route</option>
+                  </select></label
+                >
+                <label class="field"
+                  ><span>Entrance exam preference</span
+                  ><select id="exam">
+                    <option value="low">
+                      Prefer direct / moderate admission
+                    </option>
+                    <option value="medium" selected>
+                      Comfortable with entrance tests
+                    </option>
+                    <option value="high">
+                      Ready for highly competitive exams
+                    </option>
+                  </select></label
+                >
+              </div>
+            </article>
+
+            <article class="step">
+              <div class="step-title">
+                <span>5</span>
+                <div>
+                  <h3>Your priority</h3>
+                  <p>Recommendation ordering को finalise करता है।</p>
+                </div>
+              </div>
+              <div class="features priority-grid">
+                <button
+                  class="feature selected"
+                  data-group="priority"
+                  data-value="job"
+                >
+                  🚀<span
+                    ><b>Early employment</b
+                    ><small>Practical and job-oriented</small></span
+                  >
+                </button>
+                <button
+                  class="feature"
+                  data-group="priority"
+                  data-value="professional"
+                >
+                  🏅<span
+                    ><b>Professional career</b
+                    ><small>Licensed / specialised route</small></span
+                  >
+                </button>
+                <button
+                  class="feature"
+                  data-group="priority"
+                  data-value="government"
+                >
+                  🏛️<span
+                    ><b>Government / public service</b
+                    ><small>Defence, education, public roles</small></span
+                  >
+                </button>
+                <button
+                  class="feature"
+                  data-group="priority"
+                  data-value="flexible"
+                >
+                  🌱<span
+                    ><b>Broad & flexible degree</b
+                    ><small>Keep postgraduate options open</small></span
+                  >
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <aside class="result">
+            <div class="sticky">
+              <div class="result-head">
+                <span>Best eligible route</span><b id="matchTag">STRONG FIT</b>
+              </div>
+              <div class="product">
+                <div id="productIcon" class="product-icon">⚙️</div>
+                <h3 id="productTitle">Engineering & Technology</h3>
+                <p id="productReason"></p>
+              </div>
+              <div class="metrics">
+                <div><span>Suggested route</span><b id="routeResult"></b></div>
+                <div>
+                  <span>Typical duration</span><b id="durationResult"></b>
+                </div>
+                <div>
+                  <span>Admission route</span><b id="entranceResult"></b>
+                </div>
+                <div>
+                  <span>Eligibility</span
+                  ><b id="eligibilityResult">Eligible from PCM</b>
+                </div>
+              </div>
+              <div class="why-box">
+                <span>Why it fits</span>
+                <div id="whyChips"></div>
+              </div>
+              <div class="next-box">
+                <span>Next action</span><b id="nextStep"></b>
+              </div>
+              <button id="printBtn" class="outline">
+                Recommendation PDF बनाएँ
+              </button>
+              <div class="notice">
+                Course eligibility varies by university, state and year. Final
+                admission requirements must be checked on the official
+                institution or examination website.
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="ranked-section">
+        <div class="section-head center">
+          <div>
+            <span class="eyebrow">REALISTIC OPTIONS</span>
+            <h2>आपके Top 3 eligible pathways</h2>
+            <p>
+              पहले eligibility, फिर preference match—कोई ineligible course rank
+              नहीं किया जाता।
+            </p>
+          </div>
+        </div>
+        <div id="rankedGrid" class="ranked-grid"></div>
+      </section>
+    </main>
+
+    <section id="printReport" class="print-report" aria-hidden="true">
+      <div class="print-brand">
+        <div class="print-logo">AC</div>
+        <div>
+          <h1>Arun Computer Career Compass</h1>
+          <p>Career recommendation after Class 12 · Arun Computer & IT, Rewa</p>
+        </div>
+      </div>
+      <div class="print-date" id="printDate"></div>
+      <div class="print-highlight">
+        <span>Primary recommendation</span>
+        <h2 id="printTitle"></h2>
+        <p id="printReason"></p>
+      </div>
+      <div class="print-grid">
+        <div><span>Class 12 stream</span><b id="printStream"></b></div>
+        <div><span>Main interest</span><b id="printInterest"></b></div>
+        <div><span>Preferred work style</span><b id="printWork"></b></div>
+        <div><span>Study preference</span><b id="printPreference"></b></div>
+      </div>
+      <div class="print-section">
+        <h3>Recommended eligible pathways</h3>
+        <div id="printPortfolio"></div>
+      </div>
+      <div class="print-advice">
+        <h3>Important note</h3>
+        <p>
+          Verify subject combinations, minimum marks, entrance examinations, age
+          limits and medical standards from the relevant official authority
+          before applying.
+        </p>
+      </div>
+      <div class="print-contact">
+        <b>Arun Computer & IT</b>
+        <span>Allahabad Road, Urrhat, Rewa (M.P.) - 486001</span>
+        <span>+91 9201488597 · 9926542408 · aruncomputer.com</span>
+      </div>
+    </section>
+
+    <footer>
+      <div><b>Arun Computer & IT</b><span>Allahabad Road, Urrhat, Rewa (M.P.) · +91 9201488597, 9926542408</span></div><div><a href="https://aruncomputer.com/" target="_blank" rel="noopener">aruncomputer.com</a><span>Decision support—not a substitute for official eligibility verification.</span></div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
